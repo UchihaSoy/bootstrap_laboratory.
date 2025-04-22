@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for Styling -->
+    <style>
+        /* Make sure the body takes full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Footer should always stay at the bottom */
+        .content {
+            flex-grow: 1;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Skills Section Custom Styles */
+        #skills .p-3 {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #skills .p-3:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar styling for smooth transitions */
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Row 1: Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Row 2: Banner/Hero Section -->
+    <section id="about" class="py-5 text-white" style="background-color: #001f3f;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>Hi, my name is Laurence Adriel G Mayrina! I am 16 years old from Paranque City, and I attend Asia Pacific College! I am interested in lifting weights and learning how to code.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Portfolio</h2>
+                    <p>Projects and other detailed information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Row 3: Featured Sections/Skills -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="p-3 border rounded shadow-sm skill-box">
+                    <h3>UI Design</h3>
+                    <p>I design intuitive wireframes and user interfaces that prioritize usability and clarity.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3 border rounded shadow-sm skill-box">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, and JavaScript</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3 border rounded shadow-sm skill-box">
+                    <h3>Versatility</h3>
+                    <p>I am adaptable and capable of taking on diverse challenges. Whether it's learning new skills or tackling unfamiliar tasks, I embrace opportunities to grow and excel in different areas.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3 border rounded shadow-sm skill-box">
+                    <h3>I Can Walk</h3>
+                    <p>Embracing mobility and independence, I can navigate through various environments, exploring new places and adapting to different situations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Ensure all skill boxes have the same height */
+    .skill-box {
+        height: 250px; /* Adjust the height as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+</style>
+
+    <!-- Main content section to make the footer stay at the bottom -->
+    <div class="content"></div>
+
+    <!-- Row 5: Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2025 My Website. All rights reserved.</p>
+                    <p>Follow me on <a href="#" class="text-white">Social Media</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
